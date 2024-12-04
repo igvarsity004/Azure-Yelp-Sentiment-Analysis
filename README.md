@@ -22,6 +22,8 @@ The key components of the project include:
 - **Azure Data Lake Storage**: For storing raw and processed datasets.
 - **Machine Learning**: Sentiment analysis using machine learning models.
 
+**Elaboration**: The choice of **Azure Data Factory** for data ingestion and **Databricks** for model inference is based on the scalability and flexibility of these tools. **Azure Synapse Analytics** helps with high-performance querying, making it easier to analyze large datasets directly from the data lake. **Machine learning** is key to this project, as it allows businesses to predict customer sentiment from reviews in an automated way.
+
 ---
 
 ## Datasets
