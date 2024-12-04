@@ -1,29 +1,47 @@
-# Yelp Review Analysis with Azure Tools
+# Yelp Review Sentiment Analysis
 
 ## Project Overview
-This project analyzes user-generated reviews from Yelp to gain insights into customer sentiments and business performance. It leverages a variety of Azure tools, including Azure Data Factory, Databricks, and Azure Synapse Analytics, to process, analyze, and visualize the data. The main goal is to predict customer sentiments, identify trends in user behavior, and evaluate the performance of the model.
+This project utilizes Azure tools to analyze **Yelp user reviews** and predict customer sentiment. The goal is to extract valuable insights from user feedback to help businesses understand customer experiences and improve their performance. The data pipeline integrates **Azure Data Factory**, **Databricks**, **Azure Synapse Analytics**, and **Azure Data Lake Storage** to process, analyze, and visualize review data efficiently.
 
-## Key Components
-- **Data Ingestion**: Using **Azure Data Factory** to automate the ingestion of review data from multiple sources like Amazon RDS and Azure Blob Storage.
-- **Data Lake**: Data is stored in **Azure Data Lake Storage** for easy management and access.
-- **Model Inference**: Using **Databricks** for model inference, where we applied a pre-trained machine learning model to predict sentiment from the reviews.
-- **Azure Synapse Analytics**: The results are processed and visualized using **Azure Synapse Analytics**, allowing for detailed analysis of customer behavior across various cities.
-- **Machine Learning**: The project utilizes sentiment analysis to predict how customers feel about businesses, and compares the model's predictions against actual sentiments.
+The key components of the project include:
+- **Data Ingestion**: Automating data collection from various sources using **Azure Data Factory**.
+- **Data Processing**: Using **Databricks** to preprocess and train a machine learning model on Yelp review data.
+- **Model Inference**: Applying the trained model to predict customer sentiment and ratings.
+- **Data Visualization**: Using **Azure Synapse Analytics** to visualize results and draw insights.
 
-## Datasets Used
+### Key Features
+- **Sentiment Analysis**: Predicting user sentiments based on the content of Yelp reviews.
+- **City-based Analysis**: Understanding review trends by analyzing data across cities.
+- **Model Evaluation**: Comparing the predictions made by the machine learning model with actual sentiments.
+- **Automated Data Pipelines**: Automated workflows to retrieve and process data regularly.
+
+### Tools & Technologies Used
+- **Azure Data Factory (ADF)**: For data ingestion and ETL pipelines.
+- **Azure Databricks**: For data processing, model training, and inference using Spark.
+- **Azure Synapse Analytics**: For querying data and generating visualizations.
+- **Azure Data Lake Storage**: For storing raw and processed datasets.
+- **Machine Learning**: Sentiment analysis using machine learning models.
+
+---
+
+## Datasets
 The following datasets are used in this project:
-- **Reviews**: User reviews about businesses.
-- **Business**: Details about businesses (e.g., name, location, rating).
-- **Check-in**: Information about user check-ins at businesses.
-- **Tips**: Tips shared by users about businesses.
-- **Users**: Information about users interacting with Yelp.
+1. **Reviews Dataset**: Contains user reviews about businesses on Yelp.
+2. **Business Dataset**: Includes information about businesses (name, location, ratings).
+3. **Check-ins Dataset**: Records user check-ins at different businesses.
+4. **Tips Dataset**: User-generated tips about businesses.
+5. **Users Dataset**: Information about Yelp users (user_id, profile data).
 
-## Setup and Execution
+---
+
+## Setup & Installation
 
 ### Prerequisites
-Before running this project, ensure that you have access to the following:
-- **Azure Subscription**: For using Azure Data Factory, Databricks, and Azure Synapse Analytics.
-- **Databricks Workspace**: Used for data processing and model inference.
-- **Azure Synapse Analytics**: For querying and visualizing the results.
+- **Azure Subscription**: Required to set up the services (Azure Data Factory, Databricks, Azure Synapse, and Data Lake).
+- **Databricks Workspace**: For processing and running machine learning models.
+- **Azure Synapse Analytics**: For querying and analyzing the data.
+- **Python Libraries**: Install required libraries in Databricks (e.g., PySpark, MLlib).
+
+
 
 
